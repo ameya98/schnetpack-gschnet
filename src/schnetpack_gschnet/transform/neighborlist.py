@@ -122,6 +122,7 @@ class GeneralCachedNeighborList(Transform):
                         properties.idx_j: inputs[properties.idx_j],
                         properties.offsets: inputs[properties.offsets],
                         properties.r_ij: inputs[properties.r_ij],
+                        properties.Rij: inputs[properties.Rij],
                     }
                     # store additional cacheable data
                     if hasattr(self.neighbor_list, "additional_data"):
