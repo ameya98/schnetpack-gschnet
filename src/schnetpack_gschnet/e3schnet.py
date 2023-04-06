@@ -220,6 +220,8 @@ class E3SchNet(nn.Module):
         )
 
     def forward(self, inputs: Dict[str, torch.Tensor]):
+        print("keys", inputs.keys())
+
         atomic_numbers = inputs[structure.Z]
         r_ij = inputs[structure.Rij]
         idx_i = inputs[structure.idx_i]
