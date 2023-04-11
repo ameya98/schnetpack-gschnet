@@ -12,6 +12,10 @@ defaults:
   - override /model: e3schnet
   - override /model/conditioning: null
 
+model:
+  input_modules:
+    - _target_: schnetpack.atomistic.PairwiseDistances
+
 run:
   path: ${run.work_dir}/models/qm9_${globals.name}
   id: ${globals.id}
