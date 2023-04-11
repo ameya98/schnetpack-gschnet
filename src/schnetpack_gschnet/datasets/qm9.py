@@ -130,6 +130,8 @@ class QM9Gen(GenerativeAtomsDataModule):
                 num_workers).
             num_preprocessing_workers: Number of workers for preprocessing (overrides
                 num_workers).
+            num_preprocessing_workers: Number of workers for one-time preprocessing
+                during data setup (overrides num_workers).
             property_units: Dictionary from property to corresponding unit as a
                 string (eV, kcal/mol, ...).
             distance_unit: Unit of the atom positions and cell as a
